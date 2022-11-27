@@ -1,0 +1,1 @@
+cmd_/home/user/shared/helpcode-lunix-tng-20221102/modules.order := {   echo /home/user/shared/helpcode-lunix-tng-20221102/lunix.ko; :; } | awk '!x[$$0]++' - > /home/user/shared/helpcode-lunix-tng-20221102/modules.order
