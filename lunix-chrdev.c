@@ -222,7 +222,7 @@ static ssize_t lunix_chrdev_read(struct file *filp, char __user *usrbuf, size_t 
 		{
 			/* ? */
 			up(&state->lock);
-			debug("Go to sleep bitch. Die motherfucker die.\n");
+			debug("Go to sleep.\n");
 			if (wait_event_interruptible(sensor->wq, lunix_chrdev_state_needs_refresh(state)))
 				return -ERESTARTSYS;
 			if (down_interruptible(&state->lock))
